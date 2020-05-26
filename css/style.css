@@ -38,7 +38,7 @@ body * {
 
 .button:hover {
     background-color: transparent;
-    border-color: white;
+    border: 1px solid #FFFFFF;
 }
 
 .logo {
