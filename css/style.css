@@ -266,14 +266,14 @@ span {
 .camera {
     display: block;
     margin: auto;
-    padding-bottom: 30px;
 }
 
 .control__icon {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     width: 196px;
+    margin: 0 auto;
+    margin-bottom: 31px;
 }
 
 .control__icon::before {
@@ -410,12 +410,15 @@ span {
 }
 
 .repair__icon {
-    position: relative;
+    display: flex;
+    align-items: center;
+    width: 196px;
+    margin: 0 auto;
+    margin-bottom: 31px;
 }
 
 .repair__icon::before {
     content: '';
-    position: absolute;
     width: 32px;
     height: 1px;
     background: #E3B873;
@@ -425,7 +428,6 @@ span {
 }
 .repair__icon::after {
     content: '';
-    position: absolute;
     width: 32px;
     height: 1px;
     background: #E3B873;
@@ -498,7 +500,6 @@ h4 {
     line-height: 25px;
     text-align: center;
     text-transform: uppercase;
-    cursor: pointer;
 }
 
 .format {
@@ -674,6 +675,10 @@ h4 {
     position: relative;
 }
 
+.container-realize {
+    position: relative;
+}
+
 .realize-overlay {
     content: '';
     position: absolute;
@@ -785,12 +790,15 @@ h4 {
 }
 
 .clients__icon {
-    position: relative;
+    display: flex;
+    align-items: center;
+    width: 196px;
+    margin: 0 auto;
+    margin-bottom: 31px;
 }
 
 .clients__icon::before {
     content: '';
-    position: absolute;
     width: 32px;
     height: 1px;
     background: #E3B873;
@@ -800,7 +808,6 @@ h4 {
 }
 .clients__icon::after {
     content: '';
-    position: absolute;
     width: 32px;
     height: 1px;
     background: #E3B873;
@@ -811,7 +818,7 @@ h4 {
 
 .clients_text {
     width: 324px;
-    height: 216px;
+    min-height: 216px;
     margin-left: 20px;
     margin-bottom: 63px;
     font-family: 'Nunito Sans';
@@ -919,7 +926,7 @@ h4 {
     color: #FFFFFF;
 }
 
-.questions-content > .questions-button_form {
+.questions-content > .button_form {
     display: block;
     margin-top: 50px;
     margin-left: 30%;
@@ -929,8 +936,14 @@ h4 {
 .map {
     /* margin-top: 354px; */
     background-image: url(../img/street.jpg);
+    background-size: cover;
 }
-/* 
+
+.container-map {
+    display: flex;
+    flex-direction: column;
+}
+
 .map-overlay {
     content: '';
     top: 0;
@@ -938,11 +951,6 @@ h4 {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, .7);
-} */
-
-.container-map {
-    display: flex;
-    flex-direction: column;
 }
 
 .map_icons {
