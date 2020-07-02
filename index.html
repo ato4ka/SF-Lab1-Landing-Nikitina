@@ -47,7 +47,7 @@
         <section class="projects">
             <div class="container container-projects">
                 <div class="projects-details">
-                    <h2 class="title projects__title">Completed projects</h2>
+                    <h2 class="title projects__title_one">Completed projects</h2>
                     <p class="text projects__text">Only a small part of the work performed by our company is presented
                         on the site. For 14 years on in the construction market we have made happy more than 1000
                         families</p>
@@ -92,7 +92,6 @@
                     <img class="chair" src="img/image2.1.jpg" alt="стульчики">
                 </div>
             </div>
-
         </section>
 
         <section class="control">
@@ -124,9 +123,11 @@
                         <button class="button button_form">Submit</button>
                     </form>
                     <div class="checkbox-div">
-                        <input type="checkbox" class="checkbox" id="checkbox">
-                        <label for="checkbox" class="checkbox-label">I agree to the
-                            processing of personal data</label>
+                        <label class="label">
+                            <input type="checkbox" class="checkbox" >
+                            <span class="fake"></span>
+                            <span class="checkbox-text">I agree to the processing of personal data.</span>
+                        </label>
                     </div>
             </div>
         </section>
@@ -246,9 +247,11 @@
                                 </label>
 
                                 <div class="tick__form">
-                                    <input type="checkbox" name="service" value="n" checked="checked" />I agree to the
-                                    processing of
-                                    personal data
+                                    <label class="label">
+                                        <input type="checkbox" class="checkbox" >
+                                        <span class="fake"></span>
+                                        <span class="checkbox-text_black">I agree to the processing of personal data.</span>
+                                    </label>
                                 </div>
                                 <button class="button button_form_call">Call the measurer</button>
                             </form>
@@ -398,26 +401,31 @@
                     have any questions?
                 </div>
                 <form class="questions-form" action="#" method="post">
-                    <label>
-                        <p class="questions-form_text">Name</p>
-                        <input class="questions-form_input" name="Name" required placeholder="What is your name:"
-                            type="text">
-                    </label>
-                    <label>
-                        <p class="questions-form_text">Phone</p>
-                        <input class="questions-form_input" name="Phone" required placeholder="Your phone number:"
-                            type="number">
-                    </label>
+                    <div class="questions-form_wrapper">
+                        <label>
+                            <p class="questions-form_text">Name</p>
+                            <input class="questions-form_input" name="Name" required placeholder="What is your name:"
+                                type="text">
+                        </label>
+                        <label>
+                            <p class="questions-form_text">Phone</p>
+                            <input class="questions-form_input" name="Phone" required placeholder="Your phone number:"
+                                type="number">
+                        </label>
+                    </div>
+                    
                     <label>
                         <p class="questions-form_text">Question</p>
                         <input class="questions-form_input_que" name="Question" required placeholder="I want to know:"
                             type="number">
                     </label>
                 </form>
-                <div class="checkbox">
-                    <input class="checkbox-input" type="checkbox" id="checkbox">
-                    <label class="questions-checkbox-label" for="checkbox">I agree to the
-                        processing of personal data</label>
+                <div class="questions-tick__form">
+                    <label class="label">
+                        <input type="checkbox" class="checkbox">
+                        <span class="fake"></span>
+                        <span class="checkbox-text_black">I agree to the processing of personal data.</span>
+                    </label>
                 </div>
                 <button class="button button_form">Submit</button>
             </div>
