@@ -30,8 +30,6 @@ body * {
     font-style: italic;
     font-weight: normal;
     font-size: 11px;
-    line-height: 15px;
-    text-align: center;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -47,7 +45,6 @@ body * {
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
-    line-height: 15px;
     text-transform: uppercase;
 }
 
@@ -84,7 +81,6 @@ body * {
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
-    line-height: 15px;
     text-align: right;
     text-decoration-line: underline;
 }
@@ -1083,6 +1079,11 @@ h4 {
     .header {
         display: flex;
         justify-content: space-around;
+    }
+
+    .hero-container {
+        width: 100%;
+        max-width: 100%;
     }
 
     .hero .button {
